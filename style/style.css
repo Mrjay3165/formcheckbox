@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.head{
+    background-image: url(./img/nature.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: rgba(8, 8, 8, 0.4);
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.dark{
+    padding: 10px 0px;
+    /* height: 100%; */
+    /* width: 100%; */
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+}
+.content{
+    margin: 5px 70px;
+    padding: 5px;
+    background-color: rgba(118, 5, 118, 0.4);
+}
+.first{
+    display: flex;
+    padding: 10px;
+    position: relative;
+}
+.word{
+    border: none;
+    padding: 5px 50px 5px 5px;
+    position: relative;
+}
+#icon{
+    color: black;
+    padding: 5px;
+    background-color: white;
+    position: relative;
+}
+.signup{
+    margin: 5px;
+}
+a{
+    text-decoration: none;
+    background-color: rgb(219, 12, 47);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+h1{
+    font-size: 30px;
+}

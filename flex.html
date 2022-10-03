@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>list</title>
+
+
+    <script type="text/javascript">
+
+        function chkcontrol(j) 
+        {
+            var total = 0;
+
+            for (var i = 0; i < document.form1.ckb.length; i++) 
+            
+            {
+                if (document.form1.ckb[i].checked) {
+                    total = total + 1;
+                }
+                if (total > 4) {
+                    alert("Please Select only four")
+                    document.form1.ckb[j].checked = false;
+                    return false;
+                }
+            }
+        } </script>
+
+</head>
+
+<body>
+
+    <form name=form1 method=post action=check.php>
+
+            <label for="ckb0">
+            <input type=checkbox name=ckb id="ckb0" value=1 onclick='chkcontrol(0)' ;>Beans
+            </label>
+
+            <label for="ckb1">
+            <input type=checkbox name=ckb id="ckb1" value=2 onclick='chkcontrol(1)' ;>Rice
+             </label>
+            
+            <label for="ckb2">
+            <input type=checkbox name=ckb id="ckb2" value=3 onclick='chkcontrol(2)' ;>Yam
+            </label>
+
+            <label for="ckb3">
+            <input type=checkbox name=ckb id="ckb3" value=4 onclick='chkcontrol(3)' ;>Noodles
+            </label>
+        
+            <label for="ckb4">
+            <input type=checkbox name=ckb id="ckb4" value=5 onclick='chkcontrol(4)' ;>Fish
+            </label>
+
+            <label for="ckb5">
+            <input type=checkbox name=ckb id="ckb5" value=6 onclick='chkcontrol(5)' ;>Meat
+            </label>
+    </form>
+
+    <p>we can specify the amount of boxes to be checked in a checkbox by using javascript <br><br><br> ------------------------------------- <br> <br> <br>
+    
+    <b>script type="text/javascript"  <br><br>
+
+        function chkcontrol(j) <br><br>
+
+        { var total = 0; <br><br>
+
+            for (var i = 0; i < document.form1.ckb.length; i++) <br><br>
+            
+            { if (document.form1.ckb[i].checked) <br><br>
+
+                { total = total + 1;
+                }<br><br>
+
+                 if (total > 4)<br><br>
+                 {  alert("Please Select only three")
+                    document.form1.ckb[j].checked = false; <br><br>
+                    return false;
+                }<br><br>
+            }<br><br>
+        } script</b>
+        <br><br><br>
+
+
+        Using the javascript code connecting to the form holding the list of items ------<br><br>
+
+        <b>form name=form1 method=post action=check.php </b>
+        <br><br>
+
+        we are able to specify the number of items to be thicked limiting them to 4 instead of the whole 6 items. <br><br>
+        
+        <b> label for="ckb0"><br>
+            input type=checkbox name=ckb id="ckb0" value=1 onclick='chkcontrol(0)' ;>Beans <br>
+        label </b>
+
+  
+    </p>
+</body>
+
+</html>
